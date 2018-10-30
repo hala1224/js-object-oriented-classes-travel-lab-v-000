@@ -23,9 +23,17 @@ class Driver {
      }
      
      blocksTravelled(){
-       let eastWest = ['1st Avenue', '2nd Avenue', '3rd Avenue', 'Lexington Avenue', 'Park', 'Madison Avenue', '5th Avenue']
-       this.beginningLocation.horizontal
-     }
+       let eastWest = ['1st Avenue', '2nd Avenue', '3rd Avenue', 'Lexington Avenue', 'Park', 'Madison Avenue', '5th Avenue'];
+      
+     
        
-    
+      let avenues=eastWest.indexOf(this.endLocation.horizontal)
+           - eastWest.indexOf(this.beginningLocation.horizontal);
+   
+          let block1=parseInt(this.endLocation.vertical)
+          let block2=parseInt(this.beginningLocation.vertical);
+  
+          let total=avenues+(block1-block2);
+  
+          return total;
    }
