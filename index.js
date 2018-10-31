@@ -40,16 +40,14 @@ class Driver {
    
      
        
-       estimatedTime(time){
-         
-         let blocks=Route.blocksTravelled;
-
-        if (time === true) {
-          return Math.floor(blocks/2);
-        } else {
+       
+         estimatedTime(isPeakHour) {
+   
+          if(isPeakHour === undefined) {
+            return this.blocksTravelled()/3;
+          } else {
+            return this.blocksTravelled()/2;
+          }
+        }
      
-          return Math.floor(blocks/3);
-       }
-
-       }
    }
