@@ -40,7 +40,9 @@ class Driver {
    
      
        
-       estimatedTime(blocks, time){
+       estimatedTime(time){
+         
+         let blocks=route.blocksTravelled();
 
         if (time === true) {
           return Math.floor(blocks/2);
