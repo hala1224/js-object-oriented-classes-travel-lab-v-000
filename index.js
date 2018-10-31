@@ -38,7 +38,14 @@ class Driver {
           return total;
    }
    
-     estimatedTime(){
+     
        
-     }
+       estimatedTime(){
+
+         let blocks=route.blocksTravelled();
+         let offPeakTime=Math.floor(blocks/3);
+         let peakTime=Math.floor(blocks/2);
+         return offPeakTime, peakTime;
+       }
+     
 }
