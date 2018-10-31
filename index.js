@@ -42,7 +42,7 @@ class Driver {
        
        estimatedTime(time){
          
-         let blocks=Route.blocksTravelled();
+         let blocks=Route.blocksTravelled;
 
         if (time === true) {
           return Math.floor(blocks/2);
