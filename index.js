@@ -40,12 +40,14 @@ class Driver {
    
      
        
-       estimatedTime(){
+       estimatedTime(blocks, time){
 
-         let blocks=blocksTravelled();
-         let offPeakTime=Math.floor(blocks/3);
-         let peakTime=Math.floor(blocks/2);
-         return offPeakTime, peakTime;
+        if (time === true) {
+          return Math.floor(blocks/2);
+        }
+        if (time === false) 
+          return Math.floor(blocks/3);
        }
+
      
 }
