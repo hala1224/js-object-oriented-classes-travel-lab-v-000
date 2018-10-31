@@ -46,10 +46,10 @@ class Driver {
 
         if (time === true) {
           return Math.floor(blocks/2);
-        }
-        if (time === false) 
+        } else {
+     
           return Math.floor(blocks/3);
        }
 
-     
-}
+       }
+   }
