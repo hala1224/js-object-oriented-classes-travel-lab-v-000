@@ -42,7 +42,7 @@ class Driver {
        
        estimatedTime(){
 
-         let blocks=route.blocksTravelled();
+         let blocks=Route.blocksTravelled();
          let offPeakTime=Math.floor(blocks/3);
          let peakTime=Math.floor(blocks/2);
          return offPeakTime, peakTime;
